@@ -410,7 +410,7 @@ The AWS CDN service is called CloudFront. It serves up cached content and assets
 - Requests are always routed and cached in the nearest edge location for the user, thus propagating the CDN nodes and guaranteeing best performance for future requests.
 - There are two different types of distributions: 
   - **Web Distribution**: web sites, normal cached items, etc
-  - **RTMP**: streaming content, adobe, etc
+  - [**RTMP**](https://en.wikipedia.org/wiki/Real-Time_Messaging_Protocol): streaming content, adobe, etc 
 - Edge locations are not just read only. They can be written to which will then return the write value back to the origin.
 - Cached content can be manually invalidated or cleared beyond the TTL, but this does incur a cost.
 - You can invalidate the distribution of certain objects or entire directories so that content is loaded directly from the origin every time. Invalidating content is also helpful when debugging if content pulled from the origin seems correct, but pulling that same content from an edge location seems incorrect.
